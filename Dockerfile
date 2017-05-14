@@ -21,3 +21,6 @@ RUN git clone https://github.com/atom/atom.git
 WORKDIR /root/atom
 RUN git checkout tags/v1.16.0
 RUN script/build --install
+
+# extra *.so files
+RUN apt-get install -y libxss1
